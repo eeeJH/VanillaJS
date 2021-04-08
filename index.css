@@ -1,11 +1,42 @@
 body {
-  background-color: peru;
+  background-color: #adb324;
 }
 
-h1 {
-  color: wheat;
+.btn {
+  cursor: pointer;
+}
+body {
+  color: #ffffff;
+}
+
+.clicked {
+  color: #7f8c8d;
 }
 
 .form,
 .greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.backgroundImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
