@@ -37,7 +37,7 @@ function loadName() {
 function paintGreeting(text) {
     form.classList.remove(SHOWING);
     greeting.classList.add(SHOWING);
-    greeting.innerText = `Hi ${text}`;
+    greeting.innerText = `Hi! ${text}. What are you doing today?? +_+`;
 }
 
 function init() {

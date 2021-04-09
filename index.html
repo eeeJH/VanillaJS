@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +8,21 @@
     <title>Vanillar JS</title>
 </head>
 <body>
-    <div class="clock">
-        <h1>00:00</h1>
+    <div class="container">
+        <div class="clock">
+            <h1>00:00</h1>
+        </div>
+        <form class='form jsform'>
+            <input type="text" placeholder="What is your name?? ^^">
+        </form>
+        <h5 class="jsgreeting greeting"></h5>
+        <div class="todoContainer">
+            <form class='todo'>
+                <input type="text" placeholder="Write a to do!">
+            </form>
+            <ul class='todolist'></ul>
+        </div>
     </div>
-    <form class='form jsform'>
-        <input type="text" placeholder="What is your name?? ^^">
-    </form>
-    
-    <h4 class="jsgreeting greeting"></h4>
-    <form class='todo'>
-        <input type="text" placeholder="Write a to do!">
-    </form>
-
-    <ul class='todolist'>
-        
-    </ul>
 
     <span class="weather"></span>
     <script src="clock.js"></script>

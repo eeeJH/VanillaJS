@@ -35,6 +35,9 @@ function loadTodo() {
 function printTodo(text) {
     var li = document.createElement('li');
     var deleteBtn = document.createElement('button');
+    
+    // meta charset='utp-8' 했는데도 이모지 적용이 안되는데
+    // 뭘 잘못했는지 아직 발견 못함.
     deleteBtn.value = `❌`;
     deleteBtn.addEventListener('click', delteTodo);
 

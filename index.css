@@ -5,8 +5,27 @@ body {
 .btn {
   cursor: pointer;
 }
+
 body {
   color: #ffffff;
+}
+
+ul,
+li {
+  list-style: none;
+  transition: 0.5s;
+}
+
+li {
+  padding: 10px 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  cursor: default;
 }
 
 .clicked {
@@ -16,10 +35,17 @@ body {
 .form,
 .greeting {
   display: none;
+  text-align: center;
+  font-size: 3vw;
+  transition: 0.3s;
+  margin: 20px 0;
 }
 
 .showing {
   display: block;
+  opacity: 1;
+  transform: translateX(0);
+  height: auto;
 }
 
 @keyframes fadeIn {
@@ -39,4 +65,53 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+.container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  box-sizing: border-box;
+  width: 95vw;
+  height: calc(90vh - 80px - 60px);
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  text-align: center;
+  font-size: 2rem;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 2vw;
+}
+
+.clock {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.todolist {
+  padding: 20px;
+  max-height: 40vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 450px;
+  margin: 10px auto;
+  word-break: break-all;
 }
